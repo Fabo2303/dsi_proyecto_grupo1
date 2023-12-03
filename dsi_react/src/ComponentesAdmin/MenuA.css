@@ -1,0 +1,16 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.icon {
+    font-size: 30px;
+    color: black;
+    padding: 30px;
+}
+
+.icon:hover {
+    color: red;
+}

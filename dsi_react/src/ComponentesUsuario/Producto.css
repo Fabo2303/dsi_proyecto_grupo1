@@ -1,0 +1,108 @@
+.producto-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+}
+
+.producto-contenedor .card {
+    margin: 15px;
+    position: relative;
+    width: 280px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.producto-contenedor .card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.producto-contenedor .card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.producto-contenedor .card .front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.producto-contenedor .card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.producto-contenedor .card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.producto-contenedor .card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.producto-contenedor .card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.producto-contenedor .card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.producto-contenedor .contador {
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    background-color: #f64949ca;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.ocultar {
+    display: none;
+}
+
+.disponible {
+    display: none;
+}
+
+.agotado {
+    position: absolute;
+    background-color: red;
+    width: 420px;
+    height: 30px;
+    top: 130px;
+    left: -65px;
+    font-size: 20px;
+    line-height: -15px;
+    letter-spacing: 15px;
+    text-align: center;
+    transform: rotateZ(-46deg);
+}

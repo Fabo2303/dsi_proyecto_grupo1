@@ -1,0 +1,31 @@
+.main-contenedor{
+    display: grid;
+    position: relative;
+    flex: 1;
+    grid-template-areas: "header" "main";
+    grid-template-rows: 50px 1fr;
+    gap: 2px;
+}
+
+.main-contenedor-header{
+    font-size: 25px;
+    grid-area: header;
+    background-color: rgb(96, 174, 148);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+.icon-menu{
+    cursor: pointer;
+}
+
+.main-contenedor-main{
+    grid-area: main;
+    background-color: rgb(90, 210, 170);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}

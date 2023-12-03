@@ -1,0 +1,43 @@
+.productos-compra{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 26px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para las filas impares */
+tbody tr:nth-child(odd) {
+    background-color: rgba(123, 88, 171, 0.741)
+}
+
+tbody tr:nth-child(even) {
+    background-color: #c8dd4096;
+}
+
+/* Estilos al pasar el cursor sobre las filas */
+tbody tr:hover {
+    background-color: #e6e6e6;
+}
+
+.oculto {
+    display: none;
+}

@@ -1,0 +1,11 @@
+.vista-contenedor{
+    flex: 1;
+}
+
+.mostrar{
+    display: flex;
+}
+
+.oculto{
+    display: none;
+}
